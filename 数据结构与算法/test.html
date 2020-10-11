@@ -37,7 +37,7 @@
     // console.log(set1.union(set2));
   </script> -->
 
-  <script src="./07_字典（map）.js"></script>
+  <!-- <script src="./07_字典（map）.js"></script>
   <script>
     let dic = new Dictionay();
     let obj1 = {
@@ -50,6 +50,52 @@
 
     dic.set(obj1, 'obj1');
     dic.set(obj2, 'obj2');
+  </script> -->
+
+
+  
+  <script src="./08_二叉搜索树.js"></script>
+  <script>
+    let bst = new BinarySearchTree();
+    bst.insert(11);
+    bst.insert(7);
+    bst.insert(15);
+    bst.insert(5);
+    bst.insert(3);
+    bst.insert(9);
+    bst.insert(8);
+    bst.insert(10);
+    bst.insert(13);
+    bst.insert(12);
+    bst.insert(14);
+    bst.insert(20);
+    bst.insert(18);
+    bst.insert(25);
+    bst.insert(6);
+
+   
+
+    let preStr = '',
+      midStr = '',
+      postStr = '';
+
+    bst.preOrderTraverse((item) => {
+      preStr += `${item} `;
+    })
+
+    bst.minOrderTraverse((item) => {
+      midStr += `${item} `;
+    })
+
+    bst.postorderTraverse((item) => {
+      postStr += `${item} `;
+    })
+    
+    console.log(preStr);
+    console.log(midStr);
+    console.log(postStr);
+
+    
   </script>
 </body>
 
